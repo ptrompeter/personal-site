@@ -1,31 +1,94 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="full-height">
   <head>
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Palanquin" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css" media="screen" title="Patrick's Website" charset="utf-8">
     <title>Patrick's Website</title>
   </head>
-    <body>
-        <nav class="transparent">
-            <ul class="nav">
-                <li><a href="#" id="home">Home</a></li>
-                <li><a href="#" id="portfolio">Portfolio</a></li>
-                <li><a href="#" id ="about">About</a></li>
-            </ul>
-        </nav>
+    <body class=transparent>
         <header>
+            <!--Navbar-->
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+                <div class="container">
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item"><a href="#" id="home">Home</a></li>
+                            <li class="nav-item"><a href="#" id="portfolio">Portfolio</a></li>
+                            <li class="nav-item"><a href="#" id ="about">About</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--Background-->
+           <!--  <div class="view intro-2"> -->
+            </div>
         </header>
+<!--         <section class="view intro-2 hm-gradient">
+            <div class="full-bg-img">
+                placeholder
+            </div>
+        </section> -->
+        <!--Main section begins-->
         <main>
-            <article class="article" id="about-me">
-                Hi! I'm Patrick, a full-stack software developer from Seattle, WA.  I write primarily in Python and prefer backend work, but I'm also comfortable in JavaScript and related front end languages and technologies.
+            <div class="container">
+                <div class="row">
+                    <article class="article translucent col-sm-4" id="about-article">
 
-                In my personal life, I enjoy cooking, hiking, beekeeping, board games, and my dog, Watson.  I also enjoy collecting licenses and endorsements I rarely use.  I'm a licensed scuba diver, motorcyclist, and ham radio operator.  I have never operated a ham radio.
+                        <p>Hi! I'm Patrick, a full-stack software developer from Seattle, WA.</p> 
 
-                Thanks for visiting my site!
-            </article>
+                        <p>I write primarily in Python and prefer backend work, but I'm also comfortable in JavaScript and related front end languages and technologies.</p>
+
+                        <p>In my personal life, I enjoy cooking, hiking, beekeeping, board games, and my dog, Watson.  I also enjoy collecting licenses and endorsements I rarely use.  I'm a licensed scuba diver, motorcyclist, and ham radio operator.  I have never operated a ham radio.</p>
+
+                        <p>Thanks for visiting my site!</p>
+                    </article>
+                </div>
+                <div class="row">
+                    <article class="article translucent col-sm-8 offset-sm-2" id="portfolio-article">
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p><a href="https://github.com/BoardFellows/ScotlandYard">Scotland Yard</a></p>
+                            </div>
+                            <div class="col-sm-4">
+                                <p>An implementation of Scotland Yard, the classic board game, programmed in Python on the Django framework.  Playable by two players.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p><a href="https://github.com/mars-street-view/mars-street-view">Mars Street View</a></p>
+                            </div>
+                            <div class="col-sm-4">
+                                <p>Mars Street View accesses and displays photos from NASA's three Mars rovers.  Because NASA limits the number and size of calls to its APIs, our app periodically downloads and saves links to individual photos, then organizes these photos to allow users to follow the course of rovers across mars.</p>
+                                <p>Sortable by rover, date, or even camera.</p>
+                                <p>Developed in Python using the Pyramid framework. A Javascript front-end accesses the photos via AJAX.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p><a href="https://github.com/ptrompeter/SpeakEasy">SpeakEasy</a></p>
+                            </div>
+                            <div class="col-sm-4">
+                                <p>Speakeasy is a web-messaging app that allows registered users to send messages to each other; these messages are automatically translated via the google translation API.  It also allows users to communicate via chatroom.</p>
+                                <p>Javascript with a Node backend.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <p><a href="https://github.com/ptrompeter/Bike-Rack-Finder">RacTrac</a></p>
+                            </div>
+                            <div class="col-sm-4">
+                                <p>RacTrac is a simple app to that allows Seattle bicyclists to find nearby bike racks maintained by the city of Seattle using the Google Maps API.  The user's position is then compared to available bike rack location data to find the nearest rack.  Bike rack data courtesy <a href="https://data.seattle/gov">City of Seattle</a>.</p>
+                                <p>Javascript with a simple node backend to preserve secrets.</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </main>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="js/app.js"></script>
     </body>
 </html>

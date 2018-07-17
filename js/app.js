@@ -5,14 +5,17 @@ $(document).ready(function(){
             html.addClass("background-tint");
         }
         $("article").hide();
-        $("#about-me").show();
+        $("#about-article").fadeIn(500);
+        // $("#about-me").children().each(function(index) {
+        //     $(this).delay(400*index).fadeIn(300);
     });
+
     $("#portfolio").click(function () {
         if(!html.hasClass("background-tint")) {
             html.addClass("background-tint");
         }
         $("article").hide();
-        $("#portfolio").show();
+        $("#portfolio-article").fadeIn(500);
     });
     $("#home").click(function () {
         $("article").hide();

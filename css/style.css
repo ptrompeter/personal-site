@@ -1,12 +1,12 @@
 html {
-    background: url("https://i.imgur.com/EDCcWMQ.jpg") no-repeat center center fixed;
+    background: url("https://i.imgur.com/EDCcWMQ.jpg") no-repeat top center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.background-tint {
+/*.background-tint {
     background: 
         linear-gradient(
             rgba(0, 0, 0, .3),
@@ -15,7 +15,21 @@ html {
         ),
         url("https://i.imgur.com/EDCcWMQ.jpg") no-repeat center center fixed;
 }
+*/
+.intro-2 {
+    background-image: url("https://i.imgur.com/EDCcWMQ.jpg"); 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-size: cover;
+}
 
+/*.hm-gradient .full-bg-img {
+    background: -moz-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(42, 27, 161, 0.6)), to(rgba(29, 210, 177, 0.6)));
+    background: -o-linear-gradient(45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+    background: linear-gradient(to 45deg, rgba(42, 27, 161, 0.6), rgba(29, 210, 177, 0.6) 100%);
+}*/
 body {
     font-family: 'Palanquin', sans-serif;
     color: white;
@@ -30,11 +44,12 @@ nav {
     margin: 0;
 }
 
-nav ul{
+.navbar-nav{
     margin: 0;
+    float: right;
 }
 
-.nav li {
+ul li {
     float: right;
     display: block;
     padding: 8px;
@@ -42,7 +57,12 @@ nav ul{
 }
 
 .transparent {
-    background-color: rgb(0,0,0,.3);
+    background-color: rgb(0,0,0,0);
+}
+
+.translucent {
+    background-color: rgb(0,0,0,0.5);
+
 }
 
 .nav li:hover {
@@ -55,7 +75,8 @@ nav ul{
     color: inherit;
     text-decoration: none;
 }
-/*
-article {
-    display: none;
+
+
+/*article {
+    background-color: rgb(0,0,0,0);
 }*/
