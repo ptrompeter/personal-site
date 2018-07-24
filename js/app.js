@@ -1,7 +1,10 @@
 $(document).ready(function(){
     var html = $("html");
-    var navItems= $(".nav-item");
-    console.log(navItems);
+    function goHome() {
+        $("article").hide();
+        $(".nav-item").removeClass("active");
+        $("#home").addClass("active");
+    }
     $("#about").click(function () {
         $("article").hide();
         $("#about-article").fadeIn(500);
@@ -16,12 +19,12 @@ $(document).ready(function(){
         $("#portfolio").addClass("active");
     });
     $("#home").click(function () {
-        $("article").hide();
-        html.removeClass("background-tint");
-        $(".nav-item").removeClass("active");
-        $("#home").addClass("active");
+        goHome();
     });
     $(document).on('click','.navbar-collapse.show',function(e) {
         $(this).collapse('hide');
+    });
+    $("#navButton").on('click', function(e){
+        goHome();
     });
 });
