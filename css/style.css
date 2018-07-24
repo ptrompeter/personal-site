@@ -1,19 +1,9 @@
 html {
-    background: url("https://i.imgur.com/EDCcWMQ.jpg") no-repeat center center fixed;
+    background: url("https://i.imgur.com/EDCcWMQ.jpg") no-repeat top center fixed black;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-}
-
-.background-tint {
-    background: 
-        linear-gradient(
-            rgba(0, 0, 0, .3),
-            rgba(0, 0, 0, .3),
-
-        ),
-        url("https://i.imgur.com/EDCcWMQ.jpg") no-repeat center center fixed;
 }
 
 body {
@@ -30,11 +20,7 @@ nav {
     margin: 0;
 }
 
-nav ul{
-    margin: 0;
-}
-
-.nav li {
+ul li {
     float: right;
     display: block;
     padding: 8px;
@@ -42,20 +28,23 @@ nav ul{
 }
 
 .transparent {
-    background-color: rgb(0,0,0,.3);
+    background-color: rgb(0,0,0,0);
 }
 
-.nav li:hover {
-    background-color: rgb(255,255,255,.7);
-    color: black;
-    transition: 0.5s;
+.translucent {
+    background-color: rgb(0,0,0,0.5);
+
 }
 
-.nav a:link, .nav a:visited {
-    color: inherit;
-    text-decoration: none;
+main {
+    padding-top: 60px
 }
-/*
+
 article {
     display: none;
-}*/
+}
+
+#navButton {
+    outline-color: white;
+}
+

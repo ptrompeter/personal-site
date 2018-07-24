@@ -1,21 +1,30 @@
 $(document).ready(function(){
     var html = $("html");
+    function goHome() {
+        $("article").hide();
+        $(".nav-item").removeClass("active");
+        $("#home").addClass("active");
+    }
     $("#about").click(function () {
-        if (!html.hasClass("background-tint")) {
-            html.addClass("background-tint");
-        }
         $("article").hide();
-        $("#about-me").show();
+        $("#about-article").fadeIn(500);
+        $(".nav-item").removeClass("active");
+        $("#about").addClass("active");
     });
+
     $("#portfolio").click(function () {
-        if(!html.hasClass("background-tint")) {
-            html.addClass("background-tint");
-        }
         $("article").hide();
-        $("#portfolio").show();
+        $("#portfolio-article").fadeIn(500);
+        $(".nav-item").removeClass("active");
+        $("#portfolio").addClass("active");
     });
     $("#home").click(function () {
-        $("article").hide();
-        html.removeClass("background-tint");
+        goHome();
+    });
+    $(document).on('click','.navbar-collapse.show',function(e) {
+        $(this).collapse('hide');
+    });
+    $("#navButton").on('click', function(e){
+        goHome();
     });
 });
